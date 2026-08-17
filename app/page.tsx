@@ -32,10 +32,10 @@ export default function Home() {
         <article className="amenity-card amenity-wide"><img src="/images/amenity-terrace.jpg" alt="바다가 보이는 블루모먼트 통창 테라스"/><div className="amenity-card-copy"><small>OCEAN LIFE</small><h3>바람 없이 누리는 바다</h3><p>바닷바람은 막고 풍경은 오롯이 담은 통창 테라스. 실내의 편안함으로 바깥의 바다를 누립니다.</p></div></article>
         <article className="amenity-card"><img src="/images/amenity-coffee.jpg" alt="매일 세척하고 살균하는 커피머신과 전기포트"/><div className="amenity-card-copy"><small>KITCHEN &amp; DINING</small><h3>매일 관리하는 커피 스테이션</h3><p>커피머신과 전기포트는 사장님이 매일 직접 세척하고 살균합니다.</p></div></article>
         <article className="amenity-card"><img src="/images/amenity-kitchenware.jpg" alt="깨끗하게 정돈된 조리도구와 식기류"/><div className="amenity-card-copy"><small>KITCHEN &amp; DINING</small><h3>바로 꺼내 쓰는 식기</h3><p>조리도구와 식기류도 매일 꼼꼼히 세척·살균해 별도 세척 없이 사용할 수 있습니다.</p></div></article>
-        <article className="streaming-card"><div><small>ENTERTAINMENT</small><h3>각 객실 전용 계정으로<br/>좋아하는 작품을 마음껏</h3></div><div className="streaming-services"><span>NETFLIX</span><span>Disney+</span></div><p>넷플릭스와 디즈니+를 각 객실별 전용 계정으로 무제한 시청할 수 있습니다.</p></article>
+        <article className="streaming-card"><div><small>ENTERTAINMENT</small><h3>각 객실 전용 계정으로<br/>좋아하는 작품을 마음껏</h3></div><div className="streaming-services"><span className="service-netflix">NETFLIX</span><span className="service-disney">Disney+</span></div><p>넷플릭스와 디즈니+를 각 객실별 전용 계정으로 무제한 시청할 수 있습니다.</p></article>
         <article className="amenity-card"><img src="/images/amenity-bath.jpg" alt="호텔 수준의 샴푸 컨디셔너 바디워시"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>직접 테스트한 배스 어메니티</h3><p>호텔 수준의 샴푸·컨디셔너·바디워시를 직접 테스트해 엄선하며 제품은 수시로 개선합니다.</p></div></article>
         <article className="amenity-card"><img src="/images/amenity-dental.jpg" alt="고급형 칫솔 치약 면봉 세트"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>인원수에 맞춘 퍼스널 키트</h3><p>고급형 칫솔과 치약, 면봉 세트를 입실 인원에 맞춰 빠짐없이 준비합니다.</p></div></article>
-        <article className="amenity-card amenity-wide"><img src="/images/amenity-dryer.jpg" alt="욕실의 고급 벽걸이 헤어드라이어"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>단정하게 준비된 드라이어</h3><p>손쉽게 꺼내 쓰고 깔끔하게 정돈되는 고급 벽걸이 헤어드라이어를 갖췄습니다.</p></div></article>
+        <article className="amenity-card amenity-wide"><img src="/images/amenity-dryer.jpg" alt="블루모먼트 수건과 고급 벽걸이 헤어드라이어"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>포근한 수건과 단정한 드라이어</h3><p>블루모먼트 로고 수건을 1인당 1박에 2장씩 넉넉히 제공하며, 손쉽게 꺼내 쓰는 고급 벽걸이 헤어드라이어도 갖췄습니다.</p></div></article>
       </div>
       <div className="base-amenities"><strong>기본 객실 비품</strong><div className="amenity-list"><span>냉장고</span><span>전자레인지</span><span>하이라이트</span><span>에어컨</span><span>TV</span><span>Wi-Fi</span></div></div>
     </section>
@@ -47,7 +47,7 @@ export default function Home() {
     <section className="location" id="location"><div className="location-map illustrated-map"><img src="/images/wolryeong-illustrated-map.jpg" alt="블루모먼트와 월령리 선인장 자생지를 잇는 해안 산책로 일러스트 지도"/><div className="map-marker marker-stay"><i/><span>블루모먼트</span></div><div className="map-marker marker-cactus"><i/><span>선인장 자생지</span></div></div><div className="location-copy"><p className="section-index">06 · LOCATION</p><h2>제주 서쪽,<br/>월령리 바다 앞</h2><address>제주특별자치도 제주시 한림읍<br/>월령1길 30-1, 201·202호</address><p>펜션 앞 주차 가능 · 네이버 지도에서<br/>‘블루모먼트’를 검색해 주세요.</p><div className="location-links"><a href={NAVER_MAP} target="_blank" rel="noreferrer">네이버 지도 ↗</a><a href="https://www.instagram.com/blue_moment.jeju" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></section>
 
     <section className="booking-end"><p>YOUR BLUE MOMENT</p><h2>바다, 노을, 그리고<br/>우리만의 작은 휴가.</h2><a href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버에서 예약하기 ↗</a></section>
-    <footer><a className="brand footer-brand" href="#top"><img src="/images/blue-moment-logo.svg" alt="Blue moment"/></a><div><p>제주 제주시 한림읍 월령1길 30-1</p><p>0507-1337-4362</p></div><p>© BLUE MOMENT JEJU</p></footer>
+    <footer><div className="footer-inner"><a className="brand footer-brand" href="#top"><img src="/images/blue-moment-logo.svg" alt="Blue moment"/></a><div><p>제주 제주시 한림읍 월령1길 30-1</p><p>0507-1337-4362</p></div><p>© BLUE MOMENT JEJU</p></div></footer>
     <a className="mobile-book" href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버 예약 <span>↗</span></a>
   </main>;
 }
