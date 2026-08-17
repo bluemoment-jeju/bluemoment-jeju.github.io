@@ -1,5 +1,6 @@
 const NAVER_BOOKING = "https://m.place.naver.com/accommodation/1766550967/room";
 const NAVER_MAP = "https://map.naver.com/p/entry/place/1766550967";
+import RevealEffects from "./reveal-effects";
 
 export const metadata = { title: "블루모먼트 | 제주 월령리 오션프론트 스테이", description: "제주 월령리 바다 바로 앞, 통창 너머 노을을 온전히 누리는 블루모먼트." };
 
@@ -10,6 +11,7 @@ const roomDetails = [
 
 export default function Home() {
   return <main>
+    <RevealEffects />
     <header className="site-header"><a className="brand" href="#top" aria-label="블루모먼트 홈"><img src="/images/blue-moment-logo.svg" alt="Blue moment"/></a><nav aria-label="주요 메뉴"><a href="#story">공간</a><a href="#rooms">객실</a><a href="#amenities">시설</a><a href="#location">오시는 길</a></nav><a className="nav-book" href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버 예약</a></header>
 
     <section className="hero" id="top"><div className="hero-image" role="img" aria-label="블루모먼트 통창 너머로 펼쳐지는 제주 바다"/><div className="hero-shade"/><div className="hero-copy"><p className="eyebrow">WOLLYEONG · JEJU</p><h1>노을이<br/>머무는 창</h1><p className="hero-text">바다와 가장 가까운 곳에서<br/>제주의 푸른 순간을 오래 바라보세요.</p><a className="primary-button" href={NAVER_BOOKING} target="_blank" rel="noreferrer">머물 날짜 확인하기 <span>↗</span></a></div><div className="hero-note"><span>33°22′ N</span><span>바다 바로 앞 · 월령리</span></div></section>

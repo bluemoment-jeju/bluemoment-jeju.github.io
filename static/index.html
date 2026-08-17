@@ -11,5 +11,10 @@
 <section class="store-section"><div class="store-kicker">STAY UPSTAIRS · SHOP DOWNSTAIRS</div><div class="store-content"><p class="section-index">04 · 24H STORE</p><h2>한 층만 내려가면.</h2><p>과자, 음료, 아이스크림과 주류, 마른안주부터 물놀이용품과 생활용품까지. 24시간 무인편의점이 건물 1층에 있습니다.</p><div class="store-tags"><span>SNACK</span><span>DRINK</span><span>BEER</span><span>ICE CREAM</span><span>SWIM</span><span>DAILY</span></div></div></section>
 <section class="location" id="location"><div class="location-map"><div class="map-water">JEJU SEA</div><div class="map-land"><div class="pin"><i></i>BLUE MOMENT<small>월령1길 30-1</small></div></div></div><div class="location-copy"><p class="section-index">05 · LOCATION</p><h2>제주 서쪽,<br>월령리 바다 앞</h2><address>제주특별자치도 제주시 한림읍<br>월령1길 30-1, 201·202호</address><p>펜션 앞 주차 가능 · 네이버 지도에서<br>‘블루모먼트’를 검색해 주세요.</p><div class="location-links"><a href="https://map.naver.com/p/entry/place/1766550967">네이버 지도 ↗</a><a href="https://www.instagram.com/blue_moment.jeju">Instagram ↗</a></div></div></section>
 <section class="booking-end"><p>YOUR BLUE MOMENT</p><h2>바다, 노을, 그리고<br>우리만의 작은 휴가.</h2><a href="https://m.place.naver.com/accommodation/1766550967/room">네이버에서 예약하기 ↗</a></section><footer><a class="brand footer-brand" href="#top"><img src="/images/blue-moment-logo.svg" alt="Blue moment"></a><div><p>제주 제주시 한림읍 월령1길 30-1</p><p>0507-1337-4362</p></div><p>© BLUE MOMENT JEJU</p></footer><a class="mobile-book" href="https://m.place.naver.com/accommodation/1766550967/room">네이버 예약 <span>↗</span></a>
-</main></body></html>
+<script>
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealTargets=document.querySelectorAll('section img,section h1,section h2,section h3,section p,section .fact,section li,section a,section figure');
+revealTargets.forEach((el,index)=>{el.classList.add(el.tagName==='IMG'||el.tagName==='FIGURE'?'reveal-media':'reveal-text');el.style.setProperty('--reveal-delay',Math.min(index%5,4)*70+'ms')});
+if(reduceMotion){revealTargets.forEach(el=>el.classList.add('is-visible'))}else{const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('is-visible',entry.isIntersecting)),{rootMargin:'-8% 0px -10%',threshold:.12});revealTargets.forEach(el=>observer.observe(el))}
+</script></main></body></html>
 
