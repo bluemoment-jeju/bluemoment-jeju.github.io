@@ -22,7 +22,12 @@ export default function RevealEffects() {
     }
 
     const observer = new IntersectionObserver(
-      (entries) => entries.forEach((entry) => entry.target.classList.toggle("is-visible", entry.isIntersecting)),
+      (entries) => entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      }),
       { rootMargin: "-8% 0px -10%", threshold: 0.12 }
     );
     animatedTargets.forEach((element) => observer.observe(element));
