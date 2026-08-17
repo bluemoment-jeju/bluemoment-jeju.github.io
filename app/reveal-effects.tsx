@@ -9,10 +9,12 @@ export default function RevealEffects() {
       "section img, section h1, section h2, section h3, section p, section .fact, section li, section a, section figure"
     );
 
-    const animatedTargets = Array.from(targets).filter((element) => !element.closest(".persistent-media"));
+    const cardSelector = ".moment-row > div, .amenity-card, .streaming-card, .base-amenities, .room-visual, .room-copy, .film-poster, .store-content, .store-gallery figure, .location-map, .signage";
+    const cards = Array.from(document.querySelectorAll<HTMLElement>(cardSelector));
+    const animatedTargets = [...cards, ...Array.from(targets).filter((element) => !element.closest(cardSelector))];
 
     animatedTargets.forEach((element, index) => {
-      element.classList.add(element.tagName === "IMG" || element.tagName === "FIGURE" ? "reveal-media" : "reveal-text");
+      element.classList.add(element.matches(cardSelector) ? "reveal-card" : element.tagName === "IMG" || element.tagName === "FIGURE" ? "reveal-media" : "reveal-text");
       element.style.setProperty("--reveal-delay", `${Math.min(index % 5, 4) * 70}ms`);
     });
 
