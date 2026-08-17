@@ -62,3 +62,6 @@ body{background:#f5f6fa;color:#080808}
 @media(max-width:800px){.illustrated-map{min-height:430px;border-radius:0}.marker-stay{left:39%;top:68%}.marker-cactus{left:43%;top:24%}.map-marker{font-size:10px;padding:8px 10px 8px 8px}}
 @media(prefers-reduced-motion:reduce){.illustrated-map>img,.map-marker i:after{animation:none}}
 
+/* Korean typography and mobile Dalsi gallery */
+h1,h2,h3,h4,p,span,a,li,address,strong,small{word-break:keep-all;overflow-wrap:normal;hyphens:none}@media(max-width:800px){.store-gallery{grid-template-columns:1fr;gap:12px}.store-gallery figure,.store-gallery figure:first-child{grid-column:1;aspect-ratio:2.45/1;min-height:0}.store-gallery img{object-position:center}.store-gallery figure:nth-child(n){transform:none}}
+

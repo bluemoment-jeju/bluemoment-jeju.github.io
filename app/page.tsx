@@ -37,7 +37,7 @@ export default function Home() {
         <article className="amenity-card"><img src="/images/amenity-dental.jpg" alt="고급형 칫솔 치약 면봉 세트"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>인원수에 맞춘 퍼스널 키트</h3><p>고급형 칫솔과 치약, 면봉 세트를 입실 인원에 맞춰 빠짐없이 준비합니다.</p></div></article>
         <article className="amenity-card amenity-wide"><img src="/images/amenity-dryer.jpg" alt="욕실의 고급 벽걸이 헤어드라이어"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>단정하게 준비된 드라이어</h3><p>손쉽게 꺼내 쓰고 깔끔하게 정돈되는 고급 벽걸이 헤어드라이어를 갖췄습니다.</p></div></article>
       </div>
-      <div className="base-amenities"><strong>기본 객실 비품</strong><div className="amenity-list"><span>냉장고</span><span>전자레인지</span><span>인덕션</span><span>에어컨</span><span>TV</span><span>Wi-Fi</span></div></div>
+      <div className="base-amenities"><strong>기본 객실 비품</strong><div className="amenity-list"><span>냉장고</span><span>전자레인지</span><span>하이라이트</span><span>에어컨</span><span>TV</span><span>Wi-Fi</span></div></div>
     </section>
 
     <section className="film-section"><div className="film-poster"><img src="/images/exterior-01.jpg" alt="블루모먼트 영상 미리보기 - 통창 오션뷰"/><div className="play-orbit"><span>▶</span></div><div className="film-status">OFFICIAL FILM · COMING SOON</div></div><div className="film-copy"><p className="section-index">04 · FILM</p><h2>사진 너머의<br/>파도와 빛</h2><p>외관에서 객실로, 다시 창밖의 바다로 이어지는 블루모먼트의 영상을 준비하고 있습니다. 공식 영상이 등록되면 이 자리에서 바로 재생됩니다.</p></div></section>
