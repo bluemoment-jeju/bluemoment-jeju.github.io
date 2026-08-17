@@ -5,8 +5,8 @@ import RevealEffects from "./reveal-effects";
 export const metadata = { title: "블루모먼트 | 제주 월령리 오션프론트 스테이", description: "제주 월령리 바다 바로 앞, 통창 너머 노을을 온전히 누리는 블루모먼트." };
 
 const roomDetails = [
-  { number:"201", title:"바다를 향한\n아늑한 프레임", capacity:"기준 2인 · 최대 4인", image:"/images/room201-01.jpg", gallery:["/images/room201-02.jpg","/images/room201-03.jpg","/images/room201-04.jpg"], copy:"높은 박공지붕과 전면 통창이 만드는 극적인 오션뷰. 둘만의 제주부터 작은 가족 여행까지 포근하게 품는 객실입니다.", points:["오션뷰 거실","침실 1 · 침대 1","주방 · 욕실 1"] },
-  { number:"202", title:"함께 누리는\n넓은 오션 라운지", capacity:"기준 2인 · 최대 6인", image:"/images/room202-02.jpg", gallery:["/images/room202-01.jpg","/images/room202-03.jpg","/images/room202-04.jpg"], copy:"거실과 다이닝을 넉넉하게 분리한 밝은 공간. 가족이나 친구들과 같은 노을을 오래 나누기에 좋습니다.", points:["파노라마 오션뷰","침실 1 · 침대 1","넓은 다이닝 · 욕실 1"] }
+  { number:"201", title:"바다를 향한\n아늑한 프레임", capacity:"기준 2인 · 최대 4인", image:"/images/room201-01.jpg", gallery:["/images/room201-02.jpg","/images/room201-03.jpg","/images/room201-04.jpg"], copy:"높은 박공지붕 아래 침대와 휴식 공간, 주방이 경계 없이 자연스럽게 이어지는 원룸형 객실입니다. 전면 통창으로 월령리 바다를 공간 어디에서나 가깝게 누려보세요.", points:["통창 오션뷰 원룸형","침대 1 · 일체형 생활공간","주방 · 욕실 1"] },
+  { number:"202", title:"함께 누리는\n넓은 오션 라운지", capacity:"기준 2인 · 최대 6인", image:"/images/room202-02.jpg", gallery:["/images/room202-01.jpg","/images/room202-03.jpg","/images/room202-04.jpg"], copy:"다이닝 공간과 거실, 침실이 각각 분리되어 여럿이 머물러도 여유로운 객실입니다. 함께 바다를 즐기면서도 각자의 휴식은 편안하게 이어갈 수 있습니다.", points:["파노라마 오션뷰","분리형 거실 · 다이닝 공간","독립 침실 1 · 욕실 1"] }
 ];
 
 export default function Home() {
