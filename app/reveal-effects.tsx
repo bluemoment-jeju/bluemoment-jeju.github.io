@@ -9,7 +9,7 @@ export default function RevealEffects() {
       "section img, section h1, section h2, section h3, section p, section .fact, section li, section a, section figure"
     );
 
-    const cardSelector = ".moment-row > div, .amenity-card, .streaming-card, .base-amenities, .room-visual, .room-copy, .film-poster, .store-content, .store-gallery figure, .location-map, .signage";
+    const cardSelector = ".moment-row > div, .amenity-card, .streaming-card, .base-amenities, .room-visual, .room-copy, .film-poster, .store-content, .store-gallery figure, .location-map, .signage, .window-caption";
     const cards = Array.from(document.querySelectorAll<HTMLElement>(cardSelector));
     const animatedTargets = [...cards, ...Array.from(targets).filter((element) => !element.closest(cardSelector))];
 
