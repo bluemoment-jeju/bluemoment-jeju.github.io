@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 190" role="img" aria-labelledby="title desc">
+  <title id="title">Blue moment</title>
+  <desc id="desc">블루모먼트 공식 로고</desc>
+  <path d="M28 163V65L96 18" fill="none" stroke="currentColor" stroke-width="4"/>
+  <circle cx="139" cy="29" r="10" fill="#1454a0"/>
+  <text x="47" y="115" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" letter-spacing="-1.8">Blue</text>
+  <text x="47" y="158" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" letter-spacing="-1.8">moment</text>
+</svg>

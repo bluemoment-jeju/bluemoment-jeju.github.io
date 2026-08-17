@@ -10,11 +10,11 @@ const roomDetails = [
 
 export default function Home() {
   return <main>
-    <header className="site-header"><a className="brand" href="#top" aria-label="블루모먼트 홈">BLUE MOMENT</a><nav aria-label="주요 메뉴"><a href="#story">공간</a><a href="#rooms">객실</a><a href="#amenities">시설</a><a href="#location">오시는 길</a></nav><a className="nav-book" href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버 예약</a></header>
+    <header className="site-header"><a className="brand" href="#top" aria-label="블루모먼트 홈"><img src="/images/blue-moment-logo.svg" alt="Blue moment"/></a><nav aria-label="주요 메뉴"><a href="#story">공간</a><a href="#rooms">객실</a><a href="#amenities">시설</a><a href="#location">오시는 길</a></nav><a className="nav-book" href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버 예약</a></header>
 
     <section className="hero" id="top"><div className="hero-image" role="img" aria-label="블루모먼트 통창 너머로 펼쳐지는 제주 바다"/><div className="hero-shade"/><div className="hero-copy"><p className="eyebrow">WOLLYEONG · JEJU</p><h1>노을이<br/>머무는 창</h1><p className="hero-text">바다와 가장 가까운 곳에서<br/>제주의 푸른 순간을 오래 바라보세요.</p><a className="primary-button" href={NAVER_BOOKING} target="_blank" rel="noreferrer">머물 날짜 확인하기 <span>↗</span></a></div><div className="hero-note"><span>33°22′ N</span><span>바다 바로 앞 · 월령리</span></div></section>
 
-    <section className="intro" id="story"><p className="section-index">01 · THE VIEW</p><h2>여행의 목적지가<br/>창밖에 있습니다.</h2><div className="intro-grid"><p>현관을 열고 들어서는 순간, 벽 대신 바다가 맞이합니다. 낮에는 제주 특유의 푸른 물빛을, 해 질 무렵에는 월령리의 긴 노을을 소파에 앉아 누리는 곳.</p><div className="fact"><strong>0</strong><span>바다까지 필요한<br/>차량 이동 시간</span></div><div className="fact"><strong>24H</strong><span>건물 1층<br/>무인편의점</span></div></div></section>
+    <section className="intro" id="story"><p className="section-index">01 · THE VIEW</p><h2>여행의 목적지가<br/>창밖에 있습니다.</h2><div className="intro-grid"><p>현관을 열고 들어서는 순간, 벽 대신 바다가 맞이합니다. 낮에는 제주 특유의 푸른 물빛을, 해 질 무렵에는 월령리의 긴 노을을 소파에 앉아 누리는 곳.</p><div className="fact"><strong>0</strong><span>바다까지 필요한<br/>차량 이동 시간</span></div><div className="fact"><strong>24H</strong><span>건물 1층<br/>무인편의점</span></div></div><figure className="signage"><img src="/images/blue-moment-sign-enhanced.png" alt="블루모먼트 건물 외벽 공식 간판"/><figcaption><span>BLUE MOMENT SIGNATURE</span><p>월령리 바다 앞에서 만나는<br/>파란 점 하나의 작은 이정표</p></figcaption></figure></section>
 
     <section className="window-feature"><img src="/images/room201-01.jpg" alt="201호 전면 통창과 바다 전망"/><div className="window-caption"><p>FRAME THE SEA</p><h3>통창 한 폭에<br/>담긴 제주</h3><span>와인 한 잔과 노을이면 충분한 저녁</span></div></section>
 
@@ -31,7 +31,7 @@ export default function Home() {
     <section className="location" id="location"><div className="location-map"><div className="map-water">JEJU SEA</div><div className="map-land"><div className="pin"><i/>BLUE MOMENT<small>월령1길 30-1</small></div></div></div><div className="location-copy"><p className="section-index">06 · LOCATION</p><h2>제주 서쪽,<br/>월령리 바다 앞</h2><address>제주특별자치도 제주시 한림읍<br/>월령1길 30-1, 201·202호</address><p>펜션 앞 주차 가능 · 네이버 지도에서<br/>‘블루모먼트’를 검색해 주세요.</p><div className="location-links"><a href={NAVER_MAP} target="_blank" rel="noreferrer">네이버 지도 ↗</a><a href="https://www.instagram.com/blue_moment.jeju" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></section>
 
     <section className="booking-end"><p>YOUR BLUE MOMENT</p><h2>바다, 노을, 그리고<br/>우리만의 작은 휴가.</h2><a href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버에서 예약하기 ↗</a></section>
-    <footer><a className="brand" href="#top">BLUE MOMENT</a><div><p>제주 제주시 한림읍 월령1길 30-1</p><p>0507-1337-4362</p></div><p>© BLUE MOMENT JEJU</p></footer>
+    <footer><a className="brand footer-brand" href="#top"><img src="/images/blue-moment-logo.svg" alt="Blue moment"/></a><div><p>제주 제주시 한림읍 월령1길 30-1</p><p>0507-1337-4362</p></div><p>© BLUE MOMENT JEJU</p></footer>
     <a className="mobile-book" href={NAVER_BOOKING} target="_blank" rel="noreferrer">네이버 예약 <span>↗</span></a>
   </main>;
 }
