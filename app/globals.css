@@ -106,14 +106,18 @@ footer{display:block;padding:0;background:#07162f;color:#fff;border-top:1px soli
 @media(max-width:800px){.footer-inner{grid-template-columns:1fr;gap:24px;padding:45px 24px 90px}.footer-inner>p{text-align:left}}
 
 
-/* Keep the actual bathroom and personal kit fully visible above their captions. */
-.amenity-card.amenity-detail{aspect-ratio:auto;display:flex;flex-direction:column;background:#f7f5f0;align-self:stretch}
-.amenity-card.amenity-detail:after{display:none}
-.amenity-card.amenity-detail>img{height:auto;aspect-ratio:1;object-fit:contain;flex:none;transform:none}
-.amenity-card.amenity-kit>img,.amenity-card.amenity-kit:hover>img{filter:brightness(1.13) saturate(.94)}
-.amenity-card.amenity-detail .amenity-card-copy{position:static;padding:28px 30px 32px;text-shadow:none}
-.amenity-card.amenity-detail .amenity-card-copy small{color:#344e9b;text-shadow:none}
-.amenity-card.amenity-detail .amenity-card-copy h3{color:#182538;text-shadow:none}
-.amenity-card.amenity-detail .amenity-card-copy p{color:#505866;text-shadow:none;line-height:1.85}
-.amenity-card.amenity-detail .amenity-card-copy .amenity-photo-note{margin-top:16px;font-size:12px;color:#727983}
-@media(max-width:800px){.amenity-card.amenity-detail .amenity-card-copy{padding:24px 22px 28px}}
+/* Bathroom feature between the rooms and 03 Amenities. */
+.bathroom-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center;padding:100px 6vw 120px;background:#f5f3ee;color:#182538;scroll-margin-top:90px}
+.bathroom-photo{margin:0;min-width:0}
+.bathroom-photo img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:24px}
+.bathroom-photo figcaption{margin-top:16px;font-size:12px;line-height:1.7;color:#68717a}
+.bathroom-copy{max-width:540px;min-width:0}
+.bathroom-copy .section-index{color:#344e9b;margin:0 0 28px}
+.bathroom-copy h2{font-size:clamp(32px,3.3vw,56px);line-height:1.25;letter-spacing:-.045em;margin:0 0 32px}
+.bathroom-copy>p:not(.section-index){font-size:16px;line-height:1.9;color:#505866;margin:0 0 20px}
+.bathroom-copy>p.bathroom-lead{font-size:clamp(18px,1.5vw,22px);color:#182538;line-height:1.65;margin-bottom:26px}
+/* Keep the kit card consistent, with its caption in the empty upper area. */
+.amenity-card.amenity-kit>img,.amenity-card.amenity-kit:hover>img{filter:brightness(1.13) saturate(.94);object-position:center 68%}
+.amenity-card.amenity-kit .amenity-card-copy{top:0;bottom:auto}
+.amenity-card.amenity-kit:after{background:linear-gradient(180deg,rgba(10,9,8,.76),rgba(10,9,8,.3) 28%,transparent 52%)}
+@media(max-width:800px){.bathroom-section{grid-template-columns:1fr;gap:32px;padding:64px 24px 72px}.bathroom-copy{max-width:none}.bathroom-copy h2{font-size:34px;margin-bottom:24px}.bathroom-photo img{border-radius:20px}.bathroom-copy>p:not(.section-index){font-size:15px}.bathroom-copy>p.bathroom-lead{font-size:19px}.amenity-card.amenity-kit .amenity-card-copy{padding:20px 22px}.amenity-card.amenity-kit .amenity-card-copy h3{margin:7px 0 5px}}
