@@ -116,6 +116,6 @@ footer{display:block;padding:0;background:#07162f;color:#fff;border-top:1px soli
 .bathroom-copy h2{font-size:clamp(32px,3.3vw,56px);line-height:1.25;letter-spacing:-.045em;margin:0 0 32px}
 .bathroom-copy>p:not(.section-index){font-size:16px;line-height:1.9;color:#505866;margin:0 0 20px}
 .bathroom-copy>p.bathroom-lead{font-size:clamp(18px,1.5vw,22px);color:#182538;line-height:1.65;margin-bottom:26px}
-/* Reframe the low-placed kit above the standard bottom caption. */
-.amenity-card.amenity-kit>img,.amenity-card.amenity-kit:hover>img{filter:brightness(1.13) saturate(.94);object-position:center 180%}
+/* Preserve the original centered photo and shared bottom caption. */
+.amenity-card.amenity-kit>img,.amenity-card.amenity-kit:hover>img{filter:brightness(1.13) saturate(.94);object-position:center}
 @media(max-width:800px){.bathroom-section{grid-template-columns:1fr;gap:32px;padding:64px 24px 72px}.bathroom-copy{max-width:none}.bathroom-copy h2{font-size:34px;margin-bottom:24px}.bathroom-photo img{border-radius:20px}.bathroom-copy>p:not(.section-index){font-size:15px}.bathroom-copy>p.bathroom-lead{font-size:19px}}
