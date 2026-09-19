@@ -37,7 +37,7 @@ export default function Home() {
         <article className="streaming-card"><div><small>ENTERTAINMENT</small><h3>각 객실 전용 계정으로<br/>좋아하는 작품을 마음껏</h3></div><div className="streaming-services"><span className="service-netflix">NETFLIX</span><span className="service-disney">Disney+</span></div><p>넷플릭스와 디즈니+를 각 객실별 전용 계정으로 무제한 시청할 수 있습니다.</p></article>
 
         <article className="amenity-card amenity-kit"><img src="/images/amenity-dental.jpg" alt="고급형 칫솔 치약 면봉 세트"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>인원수에 맞춘 퍼스널 키트</h3><p>고급형 칫솔과 치약, 면봉 세트를 입실 인원에 맞춰 빠짐없이 준비합니다.</p></div></article>
-        <article className="amenity-card amenity-wide"><img src="/images/amenity-dryer.jpg" alt="블루모먼트 수건과 고급 벽걸이 헤어드라이어"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>포근한 수건과 단정한 드라이어</h3><p>블루모먼트 로고 수건을 1인당 1박에 2장씩 넉넉히 제공하며, 손쉽게 꺼내 쓰는 고급 벽걸이 헤어드라이어도 갖췄습니다.</p></div></article>
+        <article className="amenity-card"><img src="/images/amenity-dryer.jpg" alt="블루모먼트 수건과 고급 벽걸이 헤어드라이어"/><div className="amenity-card-copy"><small>BATH &amp; CARE</small><h3>포근한 수건과 단정한 드라이어</h3><p>블루모먼트 로고 수건을 1인당 1박에 2장씩 넉넉히 제공하며, 손쉽게 꺼내 쓰는 고급 벽걸이 헤어드라이어도 갖췄습니다.</p></div></article>
       </div>
       <div className="base-amenities"><strong>기본 객실 비품</strong><div className="amenity-list"><span>냉장고</span><span>전자레인지</span><span>하이라이트</span><span>에어컨</span><span>TV</span><span>Wi-Fi</span></div></div>
     </section>
